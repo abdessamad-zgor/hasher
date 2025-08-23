@@ -1968,6 +1968,102 @@ var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__w
 var _md5_hash = Module["_md5_hash"] = createExportWrapper("md5_hash");
 
 /** @type {function(...*):?} */
+var _md4_hash = Module["_md4_hash"] = createExportWrapper("md4_hash");
+
+/** @type {function(...*):?} */
+var _md2_hash = Module["_md2_hash"] = createExportWrapper("md2_hash");
+
+/** @type {function(...*):?} */
+var _blake2s_128_hash = Module["_blake2s_128_hash"] = createExportWrapper("blake2s_128_hash");
+
+/** @type {function(...*):?} */
+var _rmd128_hash = Module["_rmd128_hash"] = createExportWrapper("rmd128_hash");
+
+/** @type {function(...*):?} */
+var _blake2s_160_hash = Module["_blake2s_160_hash"] = createExportWrapper("blake2s_160_hash");
+
+/** @type {function(...*):?} */
+var _blake2b_160_hash = Module["_blake2b_160_hash"] = createExportWrapper("blake2b_160_hash");
+
+/** @type {function(...*):?} */
+var _rmd160_hash = Module["_rmd160_hash"] = createExportWrapper("rmd160_hash");
+
+/** @type {function(...*):?} */
+var _sha1_hash = Module["_sha1_hash"] = createExportWrapper("sha1_hash");
+
+/** @type {function(...*):?} */
+var _tiger2_hash = Module["_tiger2_hash"] = createExportWrapper("tiger2_hash");
+
+/** @type {function(...*):?} */
+var _tiger_hash = Module["_tiger_hash"] = createExportWrapper("tiger_hash");
+
+/** @type {function(...*):?} */
+var _blake2s_224_hash = Module["_blake2s_224_hash"] = createExportWrapper("blake2s_224_hash");
+
+/** @type {function(...*):?} */
+var _sha224_hash = Module["_sha224_hash"] = createExportWrapper("sha224_hash");
+
+/** @type {function(...*):?} */
+var _sha3_224_hash = Module["_sha3_224_hash"] = createExportWrapper("sha3_224_hash");
+
+/** @type {function(...*):?} */
+var _keccak_224_hash = Module["_keccak_224_hash"] = createExportWrapper("keccak_224_hash");
+
+/** @type {function(...*):?} */
+var _sha512_224_hash = Module["_sha512_224_hash"] = createExportWrapper("sha512_224_hash");
+
+/** @type {function(...*):?} */
+var _blake2b_256_hash = Module["_blake2b_256_hash"] = createExportWrapper("blake2b_256_hash");
+
+/** @type {function(...*):?} */
+var _blake2s_256_hash = Module["_blake2s_256_hash"] = createExportWrapper("blake2s_256_hash");
+
+/** @type {function(...*):?} */
+var _rmd256_hash = Module["_rmd256_hash"] = createExportWrapper("rmd256_hash");
+
+/** @type {function(...*):?} */
+var _sha256_hash = Module["_sha256_hash"] = createExportWrapper("sha256_hash");
+
+/** @type {function(...*):?} */
+var _sha3_256_hash = Module["_sha3_256_hash"] = createExportWrapper("sha3_256_hash");
+
+/** @type {function(...*):?} */
+var _keccak_256_hash = Module["_keccak_256_hash"] = createExportWrapper("keccak_256_hash");
+
+/** @type {function(...*):?} */
+var _sha512_256_hash = Module["_sha512_256_hash"] = createExportWrapper("sha512_256_hash");
+
+/** @type {function(...*):?} */
+var _rmd320_hash = Module["_rmd320_hash"] = createExportWrapper("rmd320_hash");
+
+/** @type {function(...*):?} */
+var _blake2b_384_hash = Module["_blake2b_384_hash"] = createExportWrapper("blake2b_384_hash");
+
+/** @type {function(...*):?} */
+var _sha384_hash = Module["_sha384_hash"] = createExportWrapper("sha384_hash");
+
+/** @type {function(...*):?} */
+var _sha3_384_hash = Module["_sha3_384_hash"] = createExportWrapper("sha3_384_hash");
+
+/** @type {function(...*):?} */
+var _keccak_384_hash = Module["_keccak_384_hash"] = createExportWrapper("keccak_384_hash");
+
+/** @type {function(...*):?} */
+var _blake2b_512_hash = Module["_blake2b_512_hash"] = createExportWrapper("blake2b_512_hash");
+
+/** @type {function(...*):?} */
+var _sha512_hash = Module["_sha512_hash"] = createExportWrapper("sha512_hash");
+
+/** @type {function(...*):?} */
+var _sha3_512_hash = Module["_sha3_512_hash"] = createExportWrapper("sha3_512_hash");
+
+/** @type {function(...*):?} */
+var _keccak_512_hash = Module["_keccak_512_hash"] = createExportWrapper("keccak_512_hash");
+
+/** @type {function(...*):?} */
+var _whirlpool_hash = Module["_whirlpool_hash"] = createExportWrapper("whirlpool_hash");
+
+/** @type {function(...*):?} */
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
 
 /** @type {function(...*):?} */

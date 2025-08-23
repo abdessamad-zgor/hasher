@@ -17,7 +17,22 @@
                     <label for="hash-function" class="form-label">Hash Algorithm</label>
                     <select id="hash-function" class="form-select">
                         <option value="md5" selected>MD5</option>
+                        <option value="md4">MD4</option>
+                        <option value="md2">MD2</option>
+                        <option value="sha1">SHA1</option>
+                        <option value="sha2">SHA2</option>
+                        <option value="sha3">SHA3</option>
+                        <option value="blake2s">BLAKE2S</option>
+                        <option value="blake2b">BLAKE2B</option>
+                        <option value="rmd">RIPEMD</option>
+                        <option value="keccak">Keccak</option>
+                        <option value="whirlpool">Whirlpool</option>
                     </select>
+                    <div id="output-size" style="display: none;">
+                        <label for="output-size" class="form-label">Output size</label>
+                        <select class="form-select">
+                        </select>
+                    </div>
                     <button type="button" id="hash" class="btn btn-primary">Hash</button>
                 </div>
                 <div class="col-5">
