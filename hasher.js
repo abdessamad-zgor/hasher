@@ -10,10 +10,10 @@ const hash_functions = {
     "blake2b_256": Module.cwrap("blake2b_256_hash", 'string', ['string']),
     "blake2b_384": Module.cwrap("blake2b_384_hash", 'string', ['string']),
     "blake2b_512": Module.cwrap("blake2b_512_hash", 'string', ['string']),
-    "rmd128": Module.cwrap("rmd128_hash", 'string', ['string']),
-    "rmd160": Module.cwrap("rmd160_hash", 'string', ['string']),
-    "rmd256": Module.cwrap("rmd256_hash", 'string', ['string']),
-    "rmd320": Module.cwrap("rmd320_hash", 'string', ['string']),
+    "rmd_128": Module.cwrap("rmd128_hash", 'string', ['string']),
+    "rmd_160": Module.cwrap("rmd160_hash", 'string', ['string']),
+    "rmd_256": Module.cwrap("rmd256_hash", 'string', ['string']),
+    "rmd_320": Module.cwrap("rmd320_hash", 'string', ['string']),
     "sha1": Module.cwrap("sha1_hash", 'string', ['string']),
     "sha2_224": Module.cwrap("sha224_hash", 'string', ['string']),
     "sha2_256": Module.cwrap("sha256_hash", 'string', ['string']),
@@ -38,13 +38,11 @@ const output_size = {
     "blake2b": [160, 256, 384, 512],
     "sha2": [224, 256, 384, 512],
     "sha3": [224, 256, 384, 512],
-    "keccak": [224, 56, 384, 512],
+    "keccak": [224, 256, 384, 512],
 }
 
 $(document).ready(() => {
     $("#hash-function").on("change", (e)=>{
-        console.log(e);
-        console.log(output_size[e.target.value]);
         if (output_size[e.target.value]!=undefined) {
             $("#output-size").css("display", "block");
             $("#output-size select").empty();
@@ -59,11 +57,9 @@ $(document).ready(() => {
         var inputText = $("#input").val();
         var hash_func = $("#hash-function").val();
         var hash_out = output_size[hash_func] ? $("#output-size select").val() : null;
-        if (inputText != "") 
-        {
-            let hash_func_name = `${hash_func}${hash_out ? `_${hash_out}` : ''}`;
-            $("#output").val(hash_functions[hash_func_name](inputText));
-        }
+        let hash_func_name = `${hash_func}${hash_out ? `_${hash_out}` : ''}`;
+        console.log(hash_func_name);
+        $("#output").val(hash_functions[hash_func_name](inputText));
     });
 });
 
